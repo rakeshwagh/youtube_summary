@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ff;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: #ece6ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4c3f91;
+}
+
+.auth-buttons button {
+    background-color: #4c3f91;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-buttons button:hover {
+    background-color: #6a5cad;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #4c3f91;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.form-section {
+    margin: 30px 0;
+}
+
+input[type="url"] {
+    padding: 10px;
+    width: 70%;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.generate-btn {
+    background-color: #4c3f91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.generate-btn:hover {
+    background-color: #6a5cad;
+}
+
+/* Summary section  */
+#summary{
+    margin: 40px 0;
+    background-color: #ece6ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#summary-text{
+    text-align: justify;
+}
+
+/* How It Works Section */
+.how-it-works {
+    margin: 40px 0;
+    background-color: #ece6ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 30%;
+    padding: 10px;
+}
+
+.step h3 {
+    color: #4c3f91;
+}
+
+.step p {
+    color: #333;
+}
+
+/* FAQ Section */
+.faq {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ece6ff;
+    border-radius: 8px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #4c3f91;
+}
+
+.faq-item p {
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ece6ff;
+    color: #4c3f91;
+    margin-top: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+    }
+    
+    .step {
+        width: 100%;
+    }
+
+    input[type="url"] {
+        width: 90%;
+    }
+}

@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.env
+
+# If you are using PostgreSQL:
+*.pgsql
+
+# If you are using MySQL:
+*.mysql
+
+# Django migrations
+*/migrations/
+
+# Media files (uploads)
+media/
+
+# Django staticfiles
+staticfiles/
+
+# Local environment variables
+.env
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# VS Code workspace and settings
+.vscode/
+
+# IDE specific files
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# pytest
+.cache/
+
+# Environments
+*.env
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest cache
+.pytest_cache/
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Encrypted

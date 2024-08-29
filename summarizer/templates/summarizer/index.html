@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Summary Generator</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "summarizer/style.css" %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">YT Summary</div>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>YouTube Summary Generator</h1>
+            <p>Quickly summarize YouTube videos with our tool. Just paste the link and get a concise summary in seconds!</p>
+        </section>
+
+        <section class="form-section">
+            <form method="POST" action="{% url 'get_summary' %}">
+                {% csrf_token %}
+                <label for="youtube_url">Enter YouTube URL:</label>
+                <input type="url" id="youtube_url" name="youtube_url" placeholder="https://www.youtube.com/watch?v=example" required>
+                <button type="submit" class="generate-btn">Generate Summary</button>
+            </form>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How This Tool Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p>Enter the YouTube URL of the video you want to summarize.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p>Click "Generate Summary" to process the video transcript.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p>Download the generated summary as a text file.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can I summarize any YouTube video?</h3>
+                <p>Yes, you can summarize any YouTube video that has a transcript available.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How accurate are the summaries?</h3>
+                <p>The summaries are generated using advanced AI models to ensure accuracy and relevance.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a limit on the number of summaries I can generate?</h3>
+                <p>No, you can generate as many summaries as you need.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YouTube Summary Generator. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
